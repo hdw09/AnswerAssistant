@@ -46,9 +46,9 @@ answerABox = [105,536,530,89] # x,y,w,h
 > OCR用到了百度OCR API，大家要申请一个key，在plotimg.py中配置一些就行
 
 ```
-APP_ID = 'XXXX'
-API_KEY = 'XXXXXXXXXXXXXXXX'
-SECRET_KEY = 'XXXXXXXXXXXXXXX'
+APP_ID = '10684844'
+API_KEY = '07DwZEoco2COSLBgbEBlq5eU'
+SECRET_KEY = '1yO6Of2ZcHiXa7d5Nm2EbTqlS5hQHNCv'
 ```
 
 

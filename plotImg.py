@@ -1,9 +1,9 @@
 from aip import AipOcr
 import io
 
-APP_ID = ''
-API_KEY = ''
-SECRET_KEY = ''
+APP_ID = '10684844'
+API_KEY = '07DwZEoco2COSLBgbEBlq5eU'
+SECRET_KEY = '1yO6Of2ZcHiXa7d5Nm2EbTqlS5hQHNCv'
 client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 
 def markRect(box, scaleSize, lable, colorDef, axis, plt):
