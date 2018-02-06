@@ -97,9 +97,9 @@ def doTheJob():
 
 	highlightAnswers(answers)
 
-	words_sc = words_count(questionText,answers)
-	search_sc = search_count(questionText,answers)
-	showAnswersCheck(words_sc, search_sc)
+	#words_sc = words_count(questionText,answers)
+	#search_sc = search_count(questionText,answers)
+	#showAnswersCheck(words_sc, search_sc)
 
 def go():
     goOn = True

@@ -61,6 +61,21 @@ def showAnswersCheck(words_sc, search_sc):
 		print "showAnswersCheck error!!!"
         return 1
 	return 0
+def showQuestionsCheck(answers):
+	jsText = "var contentRight = document.getElementById('content_right');"
+
+	htmlText = "<h3>"+ "OCR问题答案:" +"</h3><ul>"
+	count = 1
+	for answer in answers:
+		htmlText = htmlText + "<li>" + answer.encode('utf-8') +"</li>"
+	htmlText = htmlText + "</ul><br/><br/>"
+	
+	jsText = jsText + "contentRight.innerHTML = " + "'"+ htmlText +"';"
+	try: driver.execute_script(jsText)
+	except:
+		print "showAnswersCheck error!!!"
+        return 1
+	return 0
 
 def doTheJob():
 	# 读取测试图片
@@ -96,10 +111,10 @@ def doTheJob():
 	answers.append(answerCText)
 
 	highlightAnswers(answers)
-
-	words_sc = words_count(questionText,answers)
-	search_sc = search_count(questionText,answers)
-	showAnswersCheck(words_sc, search_sc)
+	showQuestionsCheck(answers)
+	#words_sc = words_count(questionText,answers)
+	#search_sc = search_count(questionText,answers)
+	#showAnswersCheck(words_sc, search_sc)
 
 def go():
     goOn = True
